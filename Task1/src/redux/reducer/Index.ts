@@ -1,17 +1,13 @@
 import { combineReducers } from "redux";
 import {
  astroidDetailsReducer,
- randomIdReducer, 
 } from "./AstroidReducer";
 const reducer = combineReducers({
- astroidDetails: astroidDetailsReducer,
- randomId:randomIdReducer, 
+ astroidDetails: astroidDetailsReducer, 
 })
 export default reducer;
-
 export const rootReducer = combineReducers({
 astroidDetails: astroidDetailsReducer,
-randomId:randomIdReducer,
 
 });
 
