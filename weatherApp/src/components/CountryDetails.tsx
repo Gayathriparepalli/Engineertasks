@@ -21,7 +21,7 @@ const CountryDetails=()=>{
 		<Card style={{ maxWidth: 345,margin:30 }} data-testid="card">     
         <CardMedia
           component="img"
-          height="140"
+          height="50%"
           image={val.flag}
           alt="flag"
         />
