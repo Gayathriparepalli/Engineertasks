@@ -1,0 +1,12 @@
+import {ActionTypes} from "../contents/ActionTypes";
+import axios from "axios";
+export const fetchData=(page:number)=>async(dispatch:any)=>{
+	const response =await axios.get(`https://hn.algolia.com/api/v1/search_by_date?tags=story&page=${page}`);
+	dispatch({type:ActionTypes.FETCH_DATA,payload:response.data.hits})
+}
+export const rowData = (data:any) => {
+  return {
+    type: ActionTypes.ROW_DATA,
+    payload: data,
+  };
+};
