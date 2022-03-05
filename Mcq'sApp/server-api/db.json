@@ -1,0 +1,173 @@
+{
+
+  "english":[
+  {
+    "id": 1,
+    "question": "correct place for adding script tag",
+  
+    "answers": ["body","head","both head and body","none of the above" ],   
+
+    "multiple_correct_answers": "false",
+    "correct_answers":"both head and body"
+      
+    },
+     {
+    "id": 2,
+    "question": "correct place for adding script tag is both head and body",
+  
+   "answers": ["true","false" ],
+   
+    "multiple_correct_answers": "false",
+    "correct_answers":"true"
+  },
+{
+    "id": 3,
+    "question": "js stands for",     
+    "multiple_correct_answers": "false",
+    "correct_answers":"JAVA SCRIPT"
+  },
+  {
+    "id": 4,
+    "question": "match the following",     
+    "multiple_correct_answers": "false",
+    "GroupA":[
+      {
+        "id":1,
+      "value":"js"
+    },
+    {
+      "id":2,
+    "value":"css"
+  },
+  {
+    "id":3,
+    "value":"HTML"
+
+  },
+  {
+    "id":4,
+  "value":"ts"
+  }
+],
+    
+    "GroupB":[
+      {
+        "id":"a",
+      "value":"cascading style sheets"
+    }
+      ,{
+         "id":"b",
+      "value":"hyper text markup language"
+    },
+      {
+         "id":"c",
+      "value":"type script"
+    },
+    {
+       "id":"d",
+    "value":"java script"
+  }],
+  "answers": ["(1,d)(2,a)(3,b)(4,c)","(1,c)(2,a)(3,d)(4,b)","(1,a)(2,c)(3,d)(4,b)","(1,c)(2,d)(3,a)(4,b)" ],  
+     "multiple_correct_answers": "false",
+    "correct_answers":"(1,d)(2,a)(3,b)(4,c)"
+  },
+  {
+    "id": 5,
+    "question": "select the conditional statements in js",
+  
+    "answers": ["if","else if","&","|" ],   
+
+    "multiple_correct_answers": "true",
+    "correct_answers":"if,else if"
+      
+    }
+
+],
+
+  "telugu":[
+  {
+    "id": 1,
+
+    "question": "మహాభారత గ్రంధానికి వ్యాసుడు ఇచ్చిన అసలు పేరేమిటి ?",
+    
+    "answers": ["జయ","విజయ","భారత","మహా పురాణ" ],
+    "multiple_correct_answers": "false",
+    "correct_answers":"జయ"
+    
+  },
+  {
+    "id": 2,
+    "question": "మహాభారతంలో 18 పర్వాలు ఉన్నాయి",
+  
+   "answers": ["అవును","కాదు" ],
+   
+    "multiple_correct_answers": "false",
+    "correct_answers":"అవును"
+  },
+  {
+    "id": 3,
+    "question": "మహాభారతంలో ఎన్ని పర్వాలు ఉన్నాయి?",     
+    "multiple_correct_answers": "false",
+    "correct_answers":"18"
+  },
+  {
+    "id": 4,
+    "question": "match the following",     
+    "multiple_correct_answers": "false",
+    "GroupA":[
+      {
+        "id":1,
+      "value":"ఆంధ్రప్రదేశ్"
+    },
+    {
+      "id":2,
+    "value":"కర్నాటక"
+  },
+  {
+    "id":3,
+    "value":"తమిళనాడు"
+
+  },
+  {
+    "id":4,
+  "value":"గుజరాత్"
+  }
+],
+    
+    "GroupB":[
+      {
+        "id":"a",
+      "value":"తమిళం"
+    }
+      ,{
+         "id":"b",
+      "value":" గుజరాతీ "
+    },
+      {
+         "id":"c",
+      "value":"తెలుగు"
+    },
+    {
+       "id":"d",
+    "value":"కన్నడ"
+  }],
+  "answers": ["(1,c)(2,d)(3,a)(4,b)","(1,c)(2,a)(3,d)(4,b)","(1,a)(2,c)(3,d)(4,b)","(1,a)(2,b)(3,d)(4,c)" ],  
+     "multiple_correct_answers": "false",
+    "correct_answers":"(1,c)(2,d)(3,a)(4,b)"
+  },
+  {
+    "id": 5,
+    "question": "మహాభారతం పర్వాలు",
+  
+    "answers": ["ఆదిపర్వం","తెలుగు","తమిళం","సభాపర్వం"],   
+
+    "multiple_correct_answers": "true",
+    "correct_answers":"ఆదిపర్వం,సభాపర్వం"
+      
+    }
+]
+
+  
+
+}
+  
