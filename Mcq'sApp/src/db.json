@@ -3,20 +3,16 @@
   "english":[
   {
     "id": 1,
-    "question": "correct place for adding script tag",
-  
-    "answers": ["body","head","both head and body","none of the above" ],   
-
+    "question": "correct place for adding script tag",  
+    "answers": ["body","head","both head and body","none of the above" ], 
     "multiple_correct_answers": "false",
     "correct_answers":"both head and body"
       
     },
      {
     "id": 2,
-    "question": "correct place for adding script tag is both head and body",
-  
-   "answers": ["true","false" ],
-   
+    "question": "correct place for adding script tag is both head and body",  
+   "answers": ["true","false" ],   
     "multiple_correct_answers": "false",
     "correct_answers":"true"
   },
@@ -165,9 +161,7 @@
     "correct_answers":"ఆదిపర్వం,సభాపర్వం"
       
     }
-]
-
-  
+] 
 
 }
   

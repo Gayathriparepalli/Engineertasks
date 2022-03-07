@@ -25,14 +25,12 @@ const SubmitPage=()=>{
 	}
 	if(selectedAnswer.question4===data[3].correct_answers){
 		setmyAnswers((myAnswers)=>myAnswers+1)		
-	}
+	}	
 	if(selectedAnswer5==data[4].correct_answers){
 		setmyAnswers((myAnswers)=>myAnswers+1)		
 	}
 
 		setStatus("loaded");
-
-	
 
 },[])
 	

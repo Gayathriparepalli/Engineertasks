@@ -1,10 +1,19 @@
 import {ActionTypes} from "../contents/ActionTypes";
 import axios from 'axios';
+ import data from "../../db.json";
 
-export const onSelectLanguage=(language:string)=>async(dispatch:any)=>{
-	const response=await axios.get(`http://localhost:3006/${language}`);
-	dispatch({type:ActionTypes.ONSELECT_LANGUAGE,payload:response.data});
-	
+
+export const onSelectLanguage=(language:string)=>{
+if(language==="English"){
+	return{
+		type:ActionTypes.ONSELECT_LANGUAGE,
+		payload:data.english
+	}}else{
+		return{
+		type:ActionTypes.ONSELECT_LANGUAGE,
+		payload:data.telugu
+	}}
+
 }
 export const question1=(answer:string)=>{
 	return {

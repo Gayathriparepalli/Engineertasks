@@ -9,7 +9,7 @@ const ButtonsPage=()=>{
   const selectedAnswer5:any=useSelector((state:RootState)=>state.answer5);
 	const navigate=useNavigate()
 	return(
-        <Stack spacing={2} direction="row" >
+        <Stack spacing={2} direction="row" data-testid="stack">
         <Button
           variant="contained"
           style={{background:selectedAnswer.question1?"red":"gray"}} 
