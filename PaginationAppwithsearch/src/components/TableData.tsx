@@ -69,12 +69,12 @@ const TableData=()=>{
 	return (
 		<>
 		<TextField style={{marginLeft:"50px"}} variant="standard" label="search by title or created-at" value={search}
-		onChange={handlesearchField}/>
+		onChange={handlesearchField} data-testid="search"/>
 		
-           <TableContainer component={Paper}>
+           <TableContainer component={Paper} >
       <Table sx={{ maxWidth: 650 ,margin:"0px 50px"}} aria-label="simple table">
         <TableHead>
-          <TableRow>
+          <TableRow data-testid="row1">
             <TableCell>Page</TableCell>
             <TableCell>Title</TableCell>
             <TableCell>URL</TableCell>
@@ -96,8 +96,9 @@ const TableData=()=>{
               key={row.title}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               onClick={()=>handleOpen(row)}
+              data-testid="row2"
             >
-              <TableCell component="th" scope="row">
+              <TableCell component="th" scope="row" >
                 {pageNo}
               </TableCell>
               <TableCell>{row.title}</TableCell>
