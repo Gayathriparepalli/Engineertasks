@@ -1,8 +1,8 @@
 import {combineReducers} from "redux";
-import {AppReducer,AppReducer1,Answer5Reducer} from "./AppReducer";
+import {AppReducer,RowDataReducer} from "./AppReducer";
+
 export const reducer=combineReducers({
-	rootState:AppReducer,
-	answers:AppReducer1,
-	answer5:Answer5Reducer
+	hits:AppReducer,
+	rowData:RowDataReducer
 })
 export type RootState=ReturnType<typeof reducer>

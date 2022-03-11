@@ -1,47 +1,14 @@
 import {ActionTypes} from "../contents/ActionTypes";
-import axios from 'axios';
- import data from "../../db.json";
+import axios from "axios";
 
+export const fetchData=(page:number)=>async (dispatch:any)=>{
+	const response=await axios.get(`https://hn.algolia.com/api/v1/search_by_date?tags=story&page=${page}`);
+	dispatch({type:ActionTypes.FETCH_DATA,payload:response.data.hits})
+}
 
-export const onSelectLanguage=(language:string)=>{
-if(language==="English"){
-	return{
-		type:ActionTypes.ONSELECT_LANGUAGE,
-		payload:data.english
-	}}else{
-		return{
-		type:ActionTypes.ONSELECT_LANGUAGE,
-		payload:data.telugu
-	}}
-
-}
-export const question1=(answer:string)=>{
+export const rowData=(row:any)=>{
 	return {
-		type:ActionTypes.QUESTION1,
-		payload:answer
-	}
-}
-export const question2=(answer:string)=>{
-	return {
-		type:ActionTypes.QUESTION2,
-		payload:answer
-	}
-}
-export const question3=(answer:string)=>{
-	return {
-		type:ActionTypes.QUESTION3,
-		payload:answer
-	}
-}
-export const question4=(answer:string)=>{
-	return {
-		type:ActionTypes.QUESTION4,
-		payload:answer
-	}
-}
-export const question5=(answer:[])=>{
-	return {
-		type:ActionTypes.QUESTION5,
-		payload:answer
+		type:ActionTypes.ROW_DATA,
+		payload:row
 	}
 }
