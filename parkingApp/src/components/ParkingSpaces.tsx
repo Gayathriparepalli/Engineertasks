@@ -27,7 +27,7 @@ const style = {
 
 const ParkingSpaces = () => {
 	const { noOfSpaces }: any = useParams();
-	const arr: any = [];
+	let arr: any = [];
 	const [parkingSpaces, setParkingSpaces] = useState<any>([]);
 	const [open, setOpen] = useState(false);
 	const [registerNo, setRegisterNo] = useState("");
@@ -36,7 +36,8 @@ const ParkingSpaces = () => {
 	const current: any = new Date();
 	useEffect(() => {
 		for (let i = 1; i <= noOfSpaces; i++) {
-			arr.push({ parkingSpace: `parkingSpace${i}`, isEmpty: true });
+			//arr.push({ parkingSpace: `parkingSpace${i}`, isEmpty: true });
+			arr = [...arr, { parkingSpace: `parkingSpace${i}`, isEmpty: true }];
 			console.log(arr);
 		}
 		setParkingSpaces(arr);
@@ -81,9 +82,9 @@ const ParkingSpaces = () => {
 	const onExit = (data: any) => {
 		setOpen(true);
 		const time: any = `${current.getHours()}.${current.getMinutes()}`;
+		console.log(time, data.time, time - data.time);
 		const parkingTime = time - data.time;
-		console.log(Math.ceil(parkingTime), parkingTime);
-		if (Math.ceil(parkingTime) / 2 === 0 && Math.ceil(parkingTime) !== 0) {
+		if (Math.ceil(parkingTime) % 2 === 0 && Math.ceil(parkingTime) !== 0) {
 			setModalData({
 				charges: Math.ceil(parkingTime) * 5,
 				registerNo: data.registerNo,
